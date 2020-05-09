@@ -1,0 +1,61 @@
+{
+
+"id": 2008,
+"models": {
+    "Active": {
+        "name": "Peugeot 2008 Active ",
+        "price": "$351,900 MXN",
+        "transmision": "Automática",
+        "power": "110 hp",
+        "aceleration": "11.3 s",
+        "performance": "19.3 km/l",
+        "emissions": "117. g/km",
+        "colors": {
+            "exterior": {
+                "1": "Blanco Blanquise",
+                "2": "Gris Artense",
+                "3": "Gris Hurracan",
+                "4": "Rojo Ultimate"
+            },
+            "interior" : {
+                "1": "Tela color gris"
+            }
+        },
+        "rims": ["Rines de Acero con embellecedores"],
+        "motors": {
+            "motor1": {
+                "name": "PEUGEOT 2008 ACTIVE",
+                "fuel": "Gasolina"
+            }
+        }
+    },
+    "Allure": {
+        "name": "Peugeot 2008 Allure ",
+        "price": "$376,900 MXN",
+        "transmision": "Automática",
+        "power": "110 hp",
+        "aceleration": "8.5 s",
+        "performance": "19.3 km/l",
+        "emissions": "117. g/km",
+        "colors": {
+            "exterior": {
+                "1": "Blanco Blanquise",
+                "2": "Gris Artense",
+                "3": "Gris Hurracan",
+                "4": "Rojo Ultimate"
+            },
+            "interior" : {
+                "1": "Tela color gris"
+            }
+        },
+        "rims": ["Rines de Aluminio"],
+        "motors": {
+            "motor1": {
+                "name": "PEUGEOT 2008 ALLURE",
+                "fuel": "Gasolina"
+            }
+        }
+    }
+}
+    
+}

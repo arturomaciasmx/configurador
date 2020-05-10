@@ -11,7 +11,9 @@ const store = new Vuex.Store({
   state: {
     modelParam: new URL(location.href).searchParams.get('mdc'),
     currentJSON: {},
-    currentStage: 1
+    currentStage: 1,
+    selectedModel: '',
+    selectedMotor: ''
   },
   actions: {
     async getData(context) {
@@ -30,7 +32,13 @@ const store = new Vuex.Store({
     currentCarJSON(state, {data}) {
       console.log(data);
       state.currentJSON = data;
-    }
+    },
+    setSelectedModel(state, selectedModel) {
+      state.selectedModel = selectedModel
+    },
+    setSelectedMotor(state, selectedMotor) {
+      state.selectedMotor = selectedMotor
+    },
   },
   getters: {
     getCurrentStage(state) {
@@ -41,6 +49,9 @@ const store = new Vuex.Store({
     },
     getModelParam(state) {
       return state.modelParam;
+    },
+    getSelectedModel(state) {
+      return state.currentJSON.models[state.selectedModel]
     }
   }
 })

@@ -33,7 +33,7 @@
             <tr v-for="(model, key) in currentCar.models" :key="key">
                 <td>
                     <p>{{model.name}}</p>
-                    <input class="float-left" type="radio" name="modelo">
+                    <input class="float-left" type="radio" name="modelo" v-model="selectedModel" :value="key">
                     <label for="modelo">Transmision {{model.transmision}}</label>
                 </td>
                 <td>{{model.power}}</td>
@@ -41,21 +41,35 @@
                 <td>{{model.price}}</td>
             </tr>
         </table>
-        <button class="btn - btn-primary float-right" v-on:click="$store.commit('nextStage')">Siguiente</button>
+        <button class="btn - btn-primary float-right" v-on:click="nextStage">Siguiente</button>
     </div>
 </template>
 
 <script>
 export default {
     name: 'Modelo',
+    data: function() {
+        return {
+            selectedModel: ''
+        }
+    },
     computed: {
         modelParam() {
             return this.$store.getters.getModelParam
         },
         currentCar() {
            return  this.$store.getters.getCurrentCarJSON
-        },
-        
+        }
+    },
+    methods: {
+        nextStage() {
+            if(!this.selectedModel) {
+                alert('Selecciona un modelo')
+                return
+            }
+            this.$store.commit('setSelectedModel', this.selectedModel)
+            this.$store.commit('nextStage')
+        }
     }
 }
 </script>

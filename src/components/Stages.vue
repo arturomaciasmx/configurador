@@ -6,7 +6,6 @@
             <li :class="{active: currentStage == 3}">03 Color</li>
             <li :class="{active: currentStage == 4}">04 Interior</li>
             <li :class="{active: currentStage == 5}">05 Finalizar</li>
-            <li>{{currentStage}}</li>
         </ul>
     </div>
 </template>

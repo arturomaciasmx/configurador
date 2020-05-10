@@ -52,6 +52,9 @@ const store = new Vuex.Store({
     },
     getSelectedModel(state) {
       return state.currentJSON.models[state.selectedModel]
+    },
+    getSelectedModelKey(state) {
+      return state.selectedModel
     }
   }
 })

@@ -13,7 +13,9 @@ const store = new Vuex.Store({
     currentJSON: {},
     currentStage: 1,
     selectedModel: '',
-    selectedMotor: ''
+    selectedMotor: '',
+    selectedColor: '',
+    selectedInterior: '',
   },
   actions: {
     async getData(context) {
@@ -38,6 +40,12 @@ const store = new Vuex.Store({
     },
     setSelectedMotor(state, selectedMotor) {
       state.selectedMotor = selectedMotor
+    },
+    setSelectedColor(state, selectedColor) {
+      state.selectedColor = selectedColor
+    },
+    setSelectedInterior(state, selectedInterior) {
+      state.selectedInterior = selectedInterior
     },
   },
   getters: {

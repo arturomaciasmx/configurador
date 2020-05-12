@@ -31,6 +31,9 @@ const store = new Vuex.Store({
     nextStage(state) {
       state.currentStage++;
     },
+    previousStage(state) {
+      state.currentStage--;
+    },
     currentCarJSON(state, {data}) {
       console.log(data);
       state.currentJSON = data;

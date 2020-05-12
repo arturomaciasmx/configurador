@@ -3,7 +3,9 @@
         <div class="row mt-5 mb-5">
             <Stages></Stages>
             <div class="stage col-sm-12 col-md-9">
-
+                <p v-on:click="previousStage" class="back" v-if="currentStage > 1">
+                    <span class="material-icons">keyboard_arrow_left</span> Regresar
+                </p>
                 <Modelo v-if="currentStage == 1"></Modelo>
                 <Motor  v-if="currentStage == 2"></Motor>
                 <Color v-if="currentStage == 3"></Color>
@@ -32,10 +34,25 @@ export default {
         currentStage() {
             return this.$store.getters.getCurrentStage
         }
+    },
+    methods: {
+        previousStage() {
+            console.log('works');
+            
+            this.$store.commit('previousStage')
+        }
     }
 }
 </script>
 
 <style scoped>
-
+.back:hover {
+    cursor: pointer;
+}
+.back:hover span {
+    margin-left: 5px;
+}
+span {
+    vertical-align: bottom;
+}
 </style>

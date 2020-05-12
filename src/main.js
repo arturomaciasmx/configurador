@@ -20,7 +20,7 @@ const store = new Vuex.Store({
   actions: {
     async getData(context) {
       try {        
-        const res = await axios.get('/data/' + this.state.modelParam + '.json') 
+        const res = await axios.get('./data/' + this.state.modelParam + '.json') 
         context.commit('currentCarJSON', {data: res.data})
       } catch(e) {
         console.error(e)
@@ -63,6 +63,12 @@ const store = new Vuex.Store({
     },
     getSelectedModelKey(state) {
       return state.selectedModel
+    },
+    getSelectedColor(state) {
+      return state.selectedColor
+    },
+    getSelectedMotor(state) {
+      return state.selectedMotor
     }
   }
 })

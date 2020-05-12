@@ -5,13 +5,13 @@
         <div id="carouselExampleControls" class="carousel slide mt-4 mb-4" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img :src="'/img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Interior.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Interior.jfif'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'/img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Panel.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Panel.jfif'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'/img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Tablero.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Tablero.jfif'" class="d-block w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -26,7 +26,7 @@
 
         <ul class="d-flex pl-0">
             <li class="mr-3 color-selector" v-for="(color, key) in selectedModel.colors.interior" :key="key" :class="{ selected: key == selectedInterior}" v-on:click="setColor(key)">
-                <img :src="'/img/Colors/Interior/' + color + '.jpg'" @error="imageUrlAlt" alt="">
+                <img :src="'./img/Colors/Interior/' + color + '.jpg'" @error="imageUrlAlt" alt="">
             </li>
         </ul>
 
@@ -63,13 +63,17 @@ export default {
             this.$store.commit('nextStage')
         },
         imageUrlAlt(event) {
-            event.target.src = "/img/Colors/image-fallback.jpg"
+            event.target.src = "./img/Colors/image-fallback.jpg"
         }
     }
 }
 </script>
 
 <style scoped>
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
 ul {
     list-style: none;
 }

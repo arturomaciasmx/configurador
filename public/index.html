@@ -11,6 +11,31 @@
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <title><%= htmlWebpackPlugin.options.title %></title>
+
+    <style>
+        .siq_bR {
+            bottom: 10px!important;
+        }
+        .contact-form input[type="text"], .contact-form input[type="email"], .contact-form select {
+                width: 100%!important;
+        }
+        .contact-form {
+            text-align: left!important;
+        }
+        @media screen and (min-width: 1200px) {
+            #Top_bar .top_bar_left {
+            width: 1030px!important;
+            }
+        }
+        @media screen and (max-width: 400px) {
+            .container {
+                margin: 0!important;
+                max-width: 100%!important;
+            }
+            
+        }
+        
+        </style>
   </head>
   <body>
     <noscript>

@@ -5,13 +5,16 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img :src="'/img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Aerea.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Aerea.jfif'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'/img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Frente.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Frente.jfif'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'/img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Aerea.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Lateral.jfif'" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Reverso.jfif'" class="d-block w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -26,7 +29,7 @@
 
         <ul class="d-flex pl-0">
             <li class="mr-3 color-selector" v-for="(color, key) in selectedModel.colors.exterior" :key="key" :class="{ selected: key == selectedColor}" v-on:click="setColor(key)">
-                <img :src="'/img/Colors/Exterior/' + color + '.jpg'" alt="">
+                <img :src="'./img/Colors/Exterior/' + color + '.jpg'" alt="">
             </li>
         </ul>
 
@@ -67,6 +70,10 @@ export default {
 </script>
 
 <style scoped>
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+  filter: invert(1);
+}
 ul {
     list-style: none;
 }

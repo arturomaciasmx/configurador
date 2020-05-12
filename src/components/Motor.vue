@@ -11,16 +11,17 @@
                 <li><span class="material-icons mr-1">transform</span>{{selectedModel.transmision}}</li>
             </ul>
 
-            <ul class="specs-2 d-flex justify-content-between p-4">
+            <ul class="specs-2 d-flex flex-column flex-md-row justify-content-between p-4">
                 <li><b>Potencia</b><br>{{selectedModel.power}}</li>
                 <li><b>Consumo</b><br>{{selectedModel.performance}}</li>
                 <li><b>Emisiones Totales / CO2</b><br>
-                <img src="/img/B.gif" alt="">{{selectedModel.emissions}}</li>
+                <img :src="'./img/B.gif'" alt="">{{selectedModel.emissions}}</li>
             </ul>
             
             <button class="btn btn-primary float-right" v-on:click="nextStage(key)">Seleccionar</button>
             <div class="clearfix"></div>
         </div>
+        
     </div>
 </template>
 

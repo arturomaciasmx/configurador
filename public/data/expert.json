@@ -1,0 +1,56 @@
+{
+
+    "id": "traveler",
+    "models": {
+        "Pasajeros": {
+            "name": "PEUGEOT EXPERT PASAJEROS",
+            "motors": {
+                "motor1": {
+                    "name": "2.0 BLUE HDI 150HP MANUAL DE 6 VEL",
+                    "price": "$534,900 MXN",
+                    "fuel": "Diesel",
+                    "transmision": "Manual",
+                    "power": "150 hp",
+                    "performance": "16.7 km/l",
+                    "emissions": "146 g/km",
+                    "emissions_level": "D"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Blanco Blanquise"
+                },
+                "interior" : {
+                    "1": "Tela color gris"
+                }
+            },
+            "rims": ["Rines de Acero con embellecedores"]
+        },
+        "Allure": {
+            "name": "PEUGEOT EXPERT ALLURE",
+            "motors": {
+                "motor1": {
+                    "name": "2.0 BLUE HDI 150HP AUTOMÁTICA 6 VEL",
+                    "price": "$766,900 MXN",
+                    "fuel": "Diesel",
+                    "transmision": "Automática",
+                    "power": "150 hp",
+                    "performance": "15.6 km/l",
+                    "emissions": "150 g/km",
+                    "emissions_level": "D"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Blanco Blanquise",
+                    "2": "Gris Platinium"
+                },
+                "interior" : {
+                    "1": "Piel"
+                }
+            },
+            "rims": ["Rines de Acero con embellecedores"]
+        }
+    }
+        
+    }

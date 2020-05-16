@@ -3,17 +3,10 @@
     "id": 2008,
     "models": {
         "Active": {
-            "name": "Peugeot 2008 Active ",
-            "price": "$351,900 MXN",
-            "transmision": "Automática",
-            "power": "110 hp",
-            "aceleration": "11.3 s",
-            "performance": "19.3 km/l",
-            "emissions": "117. g/km",
-            "emissions_level": "B",
+            "name": "PEUGEOT 2008 ACTIVE",
             "motors": {
                 "motor1": {
-                    "name": "PEUGEOT 2008 ACTIVE",
+                    "name": "1.2 PURETECH 110HP AUTOMÁTICA 6 VEL",
                     "fuel": "Gasolina",
                     "price": "$351,900 MXN",
                     "transmision": "Automática",
@@ -38,17 +31,10 @@
             "rims": ["Rines de Acero con embellecedores"]
         },
         "Allure": {
-            "name": "Peugeot 2008 Allure ",
-            "price": "$376,900 MXN",
-            "transmision": "Automática",
-            "power": "110 hp",
-            "aceleration": "8.5 s",
-            "performance": "19.3 km/l",
-            "emissions": "117. g/km",
-            "emissions_level": "B",
+            "name": "PEUGEOT 2008 ALLURE",
             "motors": {
                 "motor1": {
-                    "name": "PEUGEOT 2008 ALLURE",
+                    "name": "1.2 PURETECH 110HP AUTOMÁTICA 6 VEL",
                     "fuel": "Gasolina",
                     "price": "$376,900 MXN",
                     "transmision": "Automática",

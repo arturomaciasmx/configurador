@@ -3,6 +3,7 @@
 "id": 301,
 "models": {
     "Active": {
+        "name": "PEUGEOT 301 ACTIVE",
         "motors": {
             "motor1": {
                 "name": "1.6 VTI 115HP MANUAL 5 VEL",
@@ -37,6 +38,7 @@
         "rims": ["Rines de Acero con embellecedores"]
     },
     "Allure": {
+        "name": "PEUGEOT 301 ALLURE",
         "motors": {
             "motor1": {
                 "name": "1.6 HDI 92HP MANUAL 5 VEL",

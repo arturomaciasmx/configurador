@@ -28,10 +28,11 @@
                 
         <div class="modelos mt-4"  v-for="(model, key) in currentCar.models" :key="key">
             <div>
-                <h4>{{model.motors['motor1'].name}}</h4>
+                <h4>{{model.name}}</h4>
+                <p>{{model.motors['motor1'].name}}</p>
                 <p for="modelo"><b>Transmision: </b> {{model.motors['motor1'].transmision}}</p>
                 <p><b>Potencia:</b> {{model.motors['motor1'].power}}</p>
-                <p><b>Emisiones de CO2:</b> <img :src="'./img/' + model.motors['motor1'].emissions_level + '.gif'" alt=""> {{model.emissions}}</p>
+                <p><b>Emisiones de CO2:</b> <img :src="'./img/' + model.motors['motor1'].emissions_level + '.gif'" alt=""> {{model.motors['motor1'].emissions}}</p>
                 <p><b>Desde:</b> {{model.motors['motor1'].price}}</p>
                 <button class="btn btn-primary" v-on:click="nextStageMobile(key)">Siguiente</button>
             </div>

@@ -1,0 +1,71 @@
+{
+
+    "id": 5008,
+    "default": "Allure",
+    "models": {
+        "Allure": {
+            "name": "PEUGEOT 5008 ALLURE",
+            "motors": {
+                "motor1": {
+                    "name": "1.6 THP 165HP AUTOMÁTICA 6 VEL",
+                    "fuel": "Gasolina",
+                    "price": "$617,900 MXN",
+                    "transmision": "Automática",
+                    "power": "165 hp",
+                    "performance": "13.6 km/l",
+                    "emissions": "170 g/km",
+                    "emissions_level": "E"  
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Cristal Esmeralda",
+                    "2": "Blanco Nacardo",
+                    "3": "Gris Platinium"
+                },
+                "interior" : {
+                    "1": "Piel"
+                }
+            },
+            "rims": ["Rines de Acero con embellecedores","Rines 2"]
+        },
+        "GT": {
+            "name": "PEUGEOT 3008 GT",
+            "motors": {
+                "motor1": {
+                    "name": "1.6 THP 165HP AUTOMÁTICA 6 VEL",
+                    "fuel": "Gasolina",
+                    "price": "$702,900 MXN",
+                    "transmision": "Automática",
+                    "power": "165 hp",
+                    "performance": "13.6 km/l",
+                    "emissions": "170 g/km",
+                    "emissions_level": "E"
+                },
+                "motor2": {
+                    "name": "2.0 BLUE HDI 150HP AUTOMÁTICA 6 VEL",
+                    "fuel": "Diesel",
+                    "price": "$732,900 MXN",
+                    "transmision": "Automática",
+                    "power": "150 hp",
+                    "performance": "20.8 km/l",
+                    "emissions": "124 g/km",
+                    "emissions_level": "C"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Cristal Esmeralda",
+                    "2": "Blanco Nacardo",
+                    "3": "Gris Platinium",
+                    "4": "Negro Perla"
+                },
+                "interior" : {
+                    "1": "Piel"
+                }
+            },
+            "rims": ["Rines de Aluminio"]
+        }
+    }
+        
+}

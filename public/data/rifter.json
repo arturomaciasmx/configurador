@@ -1,0 +1,61 @@
+{
+
+    "id": "rifter",
+    "models": {
+        "Active": {
+            "name": "PEUGEOT RIFTER ACTIVE",
+            "motors": {
+                "motor1": {
+                    "name": "1.6 HDI 92HP MANUAL 5 VEL",
+                    "price": "$332,900 MXN",
+                    "fuel": "Diesel",
+                    "transmision": "Manual",
+                    "power": "90 hp",
+                    "performance": "19.6 km/l",
+                    "emissions": "134 g/km",
+                    "emissions_level": "C"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Blanco Blanquise",
+                    "2": "Gris Artense",
+                    "3": "Gris Platinium",
+                    "4": "Azul Deep"
+                },
+                "interior" : {
+                    "1": "Tela color gris"
+                }
+            },
+            "rims": ["Rines de Acero con embellecedores"]
+        },
+        "Allure": {
+            "name": "PEUGEOT RIFTER ALLURE",
+            "motors": {
+                "motor1": {
+                    "name": "1.6 HDI 92HP MANUAL 5 VEL",
+                    "price": "$386,900 MXN",
+                    "fuel": "Diesel",
+                    "transmision": "Manual",
+                    "power": "90 hp",
+                    "performance": "19.6 km/l",
+                    "emissions": "134 g/km",
+                    "emissions_level": "C"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Blanco Blanquise",
+                    "2": "Gris Artense",
+                    "3": "Gris Platinium",
+                    "4": "Azul Deep"
+                },
+                "interior" : {
+                    "1": "Tela color gris"
+                }
+            },
+            "rims": ["Rines de Acero con embellecedores"]
+        }
+    }
+        
+    }

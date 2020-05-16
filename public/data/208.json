@@ -4,15 +4,16 @@
     "default": "Active",
     "models": {
         "Active": {
+            "name": "PEUGEOT 208 ACTIVE",
             "motors": {
                 "motor1": {
                     "name": "1.2 PURETECH 110HP MANUAL 5 VEL",
                     "fuel": "Gasolina",
-                    "price": "$256,900 MXN",
+                    "price": "$296,900 MXN",
                     "transmision": "Manual",
                     "power": "110 hp",
                     "performance": "20.8 km/l",
-                    "emissions": "109. g/km",
+                    "emissions": "109 g/km",
                     "emissions_level": "B"  
                 }
             },
@@ -28,11 +29,12 @@
             "rims": ["Rines de Acero con embellecedores","Rines 2"]
         },
         "Allure": {
+            "name": "PEUGEOT 208 ALLURE",
             "motors": {
                 "motor1": {
-                    "name": "PEUGEOT 208 ALLURE",
+                    "name": "1.2 PURETECH 110HP AUTOMÁTICA 6 VEL",
                     "fuel": "Gasolina",
-                    "price": "$343,900 MXN",
+                    "price": "$346,900 MXN",
                     "transmision": "Automática",
                     "power": "110 hp",
                     "performance": "21.2 km/l",
@@ -54,4 +56,4 @@
         }
     }
         
-    }
+}

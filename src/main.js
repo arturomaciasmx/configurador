@@ -71,7 +71,7 @@ const store = new Vuex.Store({
       return state.selectedColor
     },
     getSelectedMotor(state) {
-      return state.selectedMotor
+      return state.currentJSON.models[state.selectedModel].motors[state.selectedMotor]
     }
   }
 })

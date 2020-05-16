@@ -1,59 +1,57 @@
 {
 
-"id": 208,
-"default": "Active",
-"models": {
-    "Active": {
-        "name": "Peugeot 208 Active 2020",
-        "price": "$256,900 MXN",
-        "transmision": "Manual 5 velocidades",
-        "power": "110 hp",
-        "aceleration": "8.5 s",
-        "performance": "20.8 km/l",
-        "emissions": "109. g/km",
-        "colors": {
-            "exterior": {
-                "1": "Blanco Blanquise",
-                "2": "Gris Hurracan"
+    "id": 208,
+    "default": "Active",
+    "models": {
+        "Active": {
+            "motors": {
+                "motor1": {
+                    "name": "1.2 PURETECH 110HP MANUAL 5 VEL",
+                    "fuel": "Gasolina",
+                    "price": "$256,900 MXN",
+                    "transmision": "Manual",
+                    "power": "110 hp",
+                    "performance": "20.8 km/l",
+                    "emissions": "109. g/km",
+                    "emissions_level": "B"  
+                }
             },
-            "interior" : {
-                "1": "Tela color gris"
-            }
-        },
-        "rims": ["Rines de Acero con embellecedores","Rines 2"],
-        "motors": {
-            "motor1": {
-                "name": "PEUGEOT 208 ACTIVE",
-                "fuel": "Gasolina"
-            }
-        }
-    },
-    "Allure": {
-        "name": "Peugeot 208 Allure 2020",
-        "price": "$343,900 MXN",
-        "transmision": "Automático",
-        "power": "110 hp",
-        "aceleration": "8.5 s",
-        "performance": "21.2 km/l",
-        "emissions": "106. g/km",
-        "colors": {
-            "exterior": {
-                "1": "Blanco Blanquise",
-                "2": "Gris Hurracan",
-                "3": "Negro Perla"
+            "colors": {
+                "exterior": {
+                    "1": "Blanco Blanquise",
+                    "2": "Gris Hurracan"
+                },
+                "interior" : {
+                    "1": "Tela color gris"
+                }
             },
-            "interior" : {
-                "1": "Tela color gris"
-            }
+            "rims": ["Rines de Acero con embellecedores","Rines 2"]
         },
-        "rims": ["Rines de Aluminio"],
-        "motors": {
-            "motor1": {
-                "name": "PEUGEOT 208 ALLURE",
-                "fuel": "Gasolina"
-            }
+        "Allure": {
+            "motors": {
+                "motor1": {
+                    "name": "PEUGEOT 208 ALLURE",
+                    "fuel": "Gasolina",
+                    "price": "$343,900 MXN",
+                    "transmision": "Automática",
+                    "power": "110 hp",
+                    "performance": "21.2 km/l",
+                    "emissions": "106. g/km",
+                    "emissions_level": "B"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Blanco Blanquise",
+                    "2": "Gris Hurracan",
+                    "3": "Negro Perla"
+                },
+                "interior" : {
+                    "1": "Tela color gris"
+                }
+            },
+            "rims": ["Rines de Aluminio"]
         }
     }
-}
-    
-}
+        
+    }

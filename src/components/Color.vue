@@ -5,16 +5,16 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Aerea.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Imagen.jpg'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Frente.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Imagen1.jpg'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Lateral.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Imagen2.jpg'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Reverso.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Exterior/' + selectedModel.colors.exterior[selectedColor] + '/Imagen3.jpg'" class="d-block w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -30,6 +30,7 @@
         <ul class="d-flex pl-0">
             <li class="mr-3 color-selector" v-for="(color, key) in selectedModel.colors.exterior" :key="key" :class="{ selected: key == selectedColor}" v-on:click="setColor(key)">
                 <img :src="'./img/Colors/Exterior/' + color + '.jpg'" alt="">
+                <p class="text-center">{{color}}</p>
             </li>
         </ul>
 

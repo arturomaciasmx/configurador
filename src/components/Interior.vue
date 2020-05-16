@@ -2,23 +2,23 @@
     <div>
         <h2>Selecciona color de interior</h2>
 
-        <div id="carouselExampleControls" class="carousel slide mt-4 mb-4" data-ride="carousel">
+        <div id="carouselExampleControls1" class="carousel slide mt-4 mb-4" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Interior.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Imagen1.jpg'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Panel.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Imagen2.jpg'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Tablero.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/' + selectedModelKey +'/Interior/' + selectedModel.colors.interior[selectedInterior] +'/Imagen3.jpg'" class="d-block w-100" alt="...">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+            <a class="carousel-control-prev" href="#carouselExampleControls1" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+            <a class="carousel-control-next" href="#carouselExampleControls1" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                 <span class="sr-only">Next</span>
             </a>

@@ -1,0 +1,76 @@
+{
+
+"id": 301,
+"models": {
+    "Active": {
+        "motors": {
+            "motor1": {
+                "name": "1.6 VTI 115HP MANUAL 5 VEL",
+                "price": "$266,900 MXN",
+                "fuel": "Gasolina",
+                "transmision": "Manual",
+                "power": "115 hp",
+                "performance": "16.3 km/l",
+                "emissions": "143 g/km",
+                "emissions_level": "D"
+            },
+            "motor2": {
+                "name": "1.6 HDI 92HP MANUAL 5 VEL",
+                "price": "$278,900 MXN",
+                "fuel": "Diesel",
+                "transmision": "Manual",
+                "power": "92 hp",
+                "performance": "24.4 km/l",
+                "emissions": "108 g/km",
+                "emissions_level": "B"
+            }
+        },
+        "colors": {
+            "exterior": {
+                "1": "Blanco Blanquise",
+                "2": "Gris Artense"
+            },
+            "interior" : {
+                "1": "Tela color gris"
+            }
+        },
+        "rims": ["Rines de Acero con embellecedores"]
+    },
+    "Allure": {
+        "motors": {
+            "motor1": {
+                "name": "1.6 HDI 92HP MANUAL 5 VEL",
+                "price": "$305,900 MXN",
+                "fuel": "Diesel",
+                "transmision": "Manual",
+                "power": "92 hp",
+                "performance": "24.4 km/l",
+                "emissions": "108 g/km",
+                "emissions_level": "B"
+            },
+            "motor2": {
+                "name": "1.6 VTI 115HP AUTOMÁTICA 6 VEL",
+                "price": "$316,900 MXN",
+                "fuel": "Gasolina",
+                "transmision": "Automática",
+                "power": "115 hp",
+                "performance": "14.9 km/l",
+                "emissions": "156 g/km",
+                "emissions_level": "B"
+            }
+        },
+        "colors": {
+            "exterior": {
+                "1": "Blanco Blanquise",
+                "2": "Gris Artense",
+                "3": "Negro Onyx"
+            },
+            "interior" : {
+                "1": "Tela color gris"
+            }
+        },
+        "rims": ["Rines de Acero con embellecedores"]
+    }
+}
+    
+}

@@ -4,16 +4,16 @@
         <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                <img :src="'./img/' + modelParam + '/Fotos/Aerea.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/Imagen.jpg'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'./img/' + modelParam + '/Fotos/Frente.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/Imagen1.jpg'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'./img/' + modelParam + '/Fotos/Lateral.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/Imagen2.jpg'" class="d-block w-100" alt="...">
                 </div>
                 <div class="carousel-item">
-                <img :src="'./img/' + modelParam + '/Fotos/Reverso.jfif'" class="d-block w-100" alt="...">
+                <img :src="'./img/' + modelParam + '/Fotos/Imagen3.jpg'" class="d-block w-100" alt="...">
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -25,33 +25,14 @@
                 <span class="sr-only">Next</span>
             </a>
         </div>
-        
-        <table class="table text-center d-none">
-            <tr>
-                <th>Transmision</th>
-                <th>Potencia<br>Aceleración (0-100 km/h)</th>
-                <th class="d-none d-md-block">Rendimiento<br>Emisiones de CO2</th>
-                <th>Precios</th>
-            </tr>
-            <tr v-for="(model, key) in currentCar.models" :key="key">
-                <td>
-                    <p>{{model.name}}</p>
-                    <input class="float-left" type="radio" name="modelo" v-model="selectedModel" :value="key">
-                    <label for="modelo">Transmision {{model.transmision}}</label>
-                </td>
-                <td>{{model.power}}</td>
-                <td class="d-none d-md-block">{{model.performance}}</td>
-                <td>{{model.price}}</td>
-            </tr>
-        </table>
-        
+                
         <div class="modelos mt-4"  v-for="(model, key) in currentCar.models" :key="key">
             <div>
-                <h4>{{model.name}}</h4>
-                <p for="modelo"><b>Transmision: </b> {{model.transmision}}</p>
-                <p><b>Potencia:</b> {{model.power}}</p>
-                <p><b>Emisiones de CO2:</b> <img :src="'./img/B.gif'" alt=""> {{model.performance}}</p>
-                <p><b>Desde:</b> {{model.price}}</p>
+                <h4>{{model.motors['motor1'].name}}</h4>
+                <p for="modelo"><b>Transmision: </b> {{model.motors['motor1'].transmision}}</p>
+                <p><b>Potencia:</b> {{model.motors['motor1'].power}}</p>
+                <p><b>Emisiones de CO2:</b> <img :src="'./img/' + model.motors['motor1'].emissions_level + '.gif'" alt=""> {{model.emissions}}</p>
+                <p><b>Desde:</b> {{model.motors['motor1'].price}}</p>
                 <button class="btn btn-primary" v-on:click="nextStageMobile(key)">Siguiente</button>
             </div>
         </div>

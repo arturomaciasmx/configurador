@@ -31,18 +31,18 @@
 
             <div class="motor-container col-sm-12 col-md-6">
                 <h3>{{selectedModel.name}}</h3>
-                <p>{{ selectedModel.motors[selectedMotor].name }} | {{selectedModel.power}}</p>
+                <p>{{ selectedMotor.name }} | {{selectedMotor.power}}</p>
 
                 <ul class="specs-1 d-flex pl-0">
-                    <li class="mr-3"><span class="material-icons mr-1">local_gas_station</span>{{ selectedModel.motors[selectedMotor].fuel }}</li>
-                    <li><span class="material-icons mr-1">transform</span>{{selectedModel.transmision}}</li>
+                    <li class="mr-3"><span class="material-icons mr-1">local_gas_station</span>{{ selectedMotor.fuel }}</li>
+                    <li><span class="material-icons mr-1">transform</span>{{selectedMotor.transmision}}</li>
                 </ul>
 
                 <ul class="specs-2 d-flex flex-column justify-content-between p-4">
-                    <li><b>Potencia</b><br>{{selectedModel.power}}</li>
-                    <li><b>Consumo</b><br>{{selectedModel.performance}}</li>
+                    <li><b>Potencia</b><br>{{selectedMotor.power}}</li>
+                    <li><b>Consumo</b><br>{{selectedMotor.performance}}</li>
                     <li><b>Emisiones Totales / CO2</b><br>
-                    <img :src="'./img/B.gif'" alt="">{{selectedModel.emissions}}</li>
+                    <img :src="'./img/' + selectedMotor.emissions_level + '.gif'" alt="">{{selectedMotor.emissions}}</li>
                 </ul>    
             </div>
 

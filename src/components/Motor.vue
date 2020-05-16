@@ -3,19 +3,20 @@
         <h2>Selecciona un Motor</h2>
         
         <div class="motor-container" v-for="(motor, key) in selectedModel.motors" :key="key">
-            <h3>{{selectedModel.name}}</h3>
-            <p>A partir de <b>{{selectedModel.price}}</b></p>
+            <h3>{{motor.name}}</h3>
+        
+            <p>A partir de <b>{{motor.price}}</b></p>
 
             <ul class="specs-1 d-flex pl-0">
                 <li class="mr-3"><span class="material-icons mr-1">local_gas_station</span>{{motor.fuel}}</li>
-                <li><span class="material-icons mr-1">transform</span>{{selectedModel.transmision}}</li>
+                <li><span class="material-icons mr-1">transform</span>{{motor.transmision}}</li>
             </ul>
 
             <ul class="specs-2 d-flex flex-column flex-md-row justify-content-between p-4">
-                <li><b>Potencia</b><br>{{selectedModel.power}}</li>
-                <li><b>Consumo</b><br>{{selectedModel.performance}}</li>
+                <li><b>Potencia</b><br>{{motor.power}}</li>
+                <li><b>Consumo</b><br>{{motor.performance}}</li>
                 <li><b>Emisiones Totales / CO2</b><br>
-                <img :src="'./img/B.gif'" alt="">{{selectedModel.emissions}}</li>
+                <img :src="'./img/' + motor.emissions_level + '.gif'" alt="">{{motor.emissions}}</li>
             </ul>
             
             <button class="btn btn-primary float-right" v-on:click="nextStage(key)">Seleccionar</button>

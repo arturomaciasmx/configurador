@@ -45,17 +45,22 @@
                     <img :src="'./img/' + selectedMotor.emissions_level + '.gif'" alt="">{{selectedMotor.emissions}}</li>
                 </ul>    
             </div>
-
+            
             <div class="contact col-md-6 col-sm-12">
-                <div id="crmWebToEntityForm">
-                    <meta http-equiv="content-type" content="text/html;charset=UTF-8">
-                    <form action="https://crm.zoho.com/crm/WebToLeadForm" name="WebToLeads4281903000001130001" method="POST" onsubmit="javascript:document.charset=&quot;UTF-8&quot;; return checkMandatory4281903000001130001()" accept-charset="UTF-8" class="contact-form">
-                        <input type="text" name="xnQsjsdp" value="941965040ae679ad10aa376011a0b9d9f04e8f42c8b7b481c39756a952084572" style="display: none;">
-                        <input type="hidden" name="zc_gad" id="zc_gad" value="">
-                        <input type="text" name="xmIwtLD" value="82c4e093f19d8ae4939e0a35f58a2f2e37706ef9cb26aacd65754e772e43a565" style="display: none;">
-                        <input type="text" name="actionType" value="TGVhZHM=" style="display: none;">
-                        <input type="text" name="returnURL" value="https://peugeotmexico.com/gracias/" style="display: none;">
-                    <div class="form-group">
+<div id="crmWebToEntityForm">
+                <form action="https://crm.zoho.com/crm/WebToLeadForm" class="" name=WebToLeads4281903000001106001 method="POST" onSubmit="javascript:document.charset='UTF-8'; return checkMandatory4281903000001106001()" accept-charset="UTF-8">
+                    <input type="text" style="display:none;" name="xnQsjsdp" value="941965040ae679ad10aa376011a0b9d9f04e8f42c8b7b481c39756a952084572">
+                    <input type="hidden" name="zc_gad" id="zc_gad" value="">
+                    <input type="text" style="display:none;" name="xmIwtLD"
+                        value="82c4e093f19d8ae4939e0a35f58a2f2e26cc38b0ebc389729c207dda9439bdde">
+                    <input type="text" style="display:none;" name="actionType" value="TGVhZHM=">
+                    <input type="text" style="display:none;" name="returnURL" value="https://peugeotmexico.com/aparta-tu-peugeot/">
+                    <!-- Do not remove this code. -->
+
+           
+            
+                
+                <div class="form-group">
                         <label>Nombre:</label>
                         <input class="form-control" type="text" name="name='First Name'" required>
                     </div>
@@ -72,10 +77,21 @@
                         <input class="form-control" type="text" name="Phone" required>
                         <b style="width: 100%; font-size: 12px;"><span style="color: rgb(0, 98, 197);">Nota.</span> 10 digitos incluyendo lada. </b>
                     </div>
-                    <input id="formsubmit" class="btn btn-primary btn-block" type="submit" value="Enviar" style="margin-top: 15px;">
-                    </form>
-                </div>
+                
+                <textarea name='Description' maxlength='500' style='width:100%;' placeholder="Mensaje:" hidden></textarea>
+           
+                
+                <input style="padding: 13px 40px;border-radius: 0;cursor: pointer;font-size:12px;color: #fff;background: #0063c9;" id="formsubmit" type="submit" value="Enviar">
+                <p style="margin-top:15px;font-size: 11px;line-height: 12px;"> <img src="https://peugeotmexico.com/wp-content/uploads/2020/05/peugeot_home_03.png" style="
+                    float: left;
+                    margin-right: 5px;
+                ">Aviso de Privacidad. Su información personal es solo para nuestra consesionaria Peugeot y se utilizará únicamente para contactarlo. No cederemos ni venderemos su información a nadie. Consulte nuestra Política de privacidad para obtener más información.</p>
+        
+    </form>
+</div>
             </div>
+
+            
 
         </div>
 

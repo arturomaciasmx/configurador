@@ -7,7 +7,7 @@
             "motors": {
                 "motor1": {
                     "name": "2.0 BLUE HDI 150HP MANUAL DE 6 VEL",
-                    "price": "$534,900 MXN",
+                    "price": "$514,900 MXN",
                     "fuel": "Diesel",
                     "transmision": "Manual",
                     "power": "150 hp",
@@ -21,7 +21,7 @@
                     "1": "Blanco Blanquise"
                 },
                 "interior" : {
-                    "1": "Tela color gris"
+                    "1": "Tela gris"
                 }
             },
             "rims": ["Rines de Acero con embellecedores"]
@@ -31,7 +31,7 @@
             "motors": {
                 "motor1": {
                     "name": "2.0 BLUE HDI 150HP AUTOMÁTICA 6 VEL",
-                    "price": "$766,900 MXN",
+                    "price": "$449,900 MXN",
                     "fuel": "Diesel",
                     "transmision": "Automática",
                     "power": "150 hp",
@@ -46,7 +46,7 @@
                     "2": "Gris Platinium"
                 },
                 "interior" : {
-                    "1": "Piel"
+                    "1": "Tela gris"
                 }
             },
             "rims": ["Rines de Acero con embellecedores"]

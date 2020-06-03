@@ -9,7 +9,7 @@
                 "motor1": {
                     "name": "1.6 THP 165HP AUTOMÁTICA 6 VEL",
                     "fuel": "Gasolina",
-                    "price": "$617,900 MXN",
+                    "price": "$604,900 MXN",
                     "transmision": "Automática",
                     "power": "165 hp",
                     "performance": "13.6 km/l",
@@ -35,7 +35,7 @@
                 "motor1": {
                     "name": "1.6 THP 165HP AUTOMÁTICA 6 VEL",
                     "fuel": "Gasolina",
-                    "price": "$702,900 MXN",
+                    "price": "$689,900 MXN",
                     "transmision": "Automática",
                     "power": "165 hp",
                     "performance": "13.6 km/l",
@@ -45,7 +45,7 @@
                 "motor2": {
                     "name": "2.0 BLUE HDI 150HP AUTOMÁTICA 6 VEL",
                     "fuel": "Diesel",
-                    "price": "$732,900 MXN",
+                    "price": "$719,900 MXN",
                     "transmision": "Automática",
                     "power": "150 hp",
                     "performance": "20.8 km/l",

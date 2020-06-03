@@ -27,6 +27,7 @@
         <ul class="d-flex pl-0">
             <li class="mr-3 color-selector" v-for="(color, key) in selectedModel.colors.interior" :key="key" :class="{ selected: key == selectedInterior}" v-on:click="setColor(key)">
                 <img :src="'./img/Colors/Interior/' + color + '.jpg'" @error="imageUrlAlt" alt="">
+                {{color}}
             </li>
         </ul>
 

@@ -65,20 +65,16 @@
             
                 
                 <div class="form-group">
-                        <label>Nombre:</label>
-                        <input class="form-control" type="text" name="name='First Name'" required>
+                        <input class="form-control" type="text" name="name='First Name'" required placeholder="Nombre:">
                     </div>
                     <div class="form-group">
-                        <label>Apellido:</label>
-                        <input class="form-control" type="text" name="Last Name" required>
+                        <input class="form-control" type="text" name="Last Name" required placeholder="Apellido:">
                     </div>
                     <div class="form-group">
-                        <label>Email:</label>
-                        <input class="form-control" type="email" name="Email" required>
+                        <input class="form-control" type="email" name="Email" required placeholder="Email:">
                     </div>
                     <div class="form-group">
-                        <label>Celular:</label>
-                        <input class="form-control" type="text" name="Phone" required>
+                        <input class="form-control" type="text" name="Phone" required placeholder="Celular:">
                         <b style="width: 100%; font-size: 12px;"><span style="color: rgb(0, 98, 197);">Nota.</span> 10 digitos incluyendo lada. </b>
                     </div>
                 
@@ -88,7 +84,7 @@
                 </textarea>
                 <input type="hidden" name="Lead Source" value="Configurador">
                 
-                <input style="padding: 13px 40px;border-radius: 0;cursor: pointer;font-size:12px;color: #fff;background: #0063c9;" id="formsubmit" type="submit" value="Enviar">
+                <input style="padding: 13px 40px;border-radius: 0;cursor: pointer;font-size:12px;color: #fff;background: #0063c9;border:none;" id="formsubmit" type="submit" value="Enviar">
                 <p style="margin-top:15px;font-size: 11px;line-height: 12px;"> <img src="https://peugeotmexico.com/wp-content/uploads/2020/05/peugeot_home_03.png" style="
                     float: left;
                     margin-right: 5px;
@@ -155,6 +151,14 @@ export default {
     padding: 30px;
     margin: 20px auto;
     border: 3px solid #dadada;
+}
+.contact {
+    margin: 20px auto;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+textarea {
+    width: 100%;
 }
 .specs-1 li span {
     vertical-align: bottom;

@@ -65,6 +65,8 @@ export default {
                 alert('Selecciona un modelo')
                 return
             }
+            
+            
             this.$store.commit('setSelectedModel', this.selectedModel)
             this.$store.commit('nextStage')
         }, 

@@ -1,0 +1,33 @@
+{
+    "id": "kwid",
+    "default": "Intens",
+    "models": {
+        "Intens": {
+            "name": "Kwid",
+            "motors": {
+                "motor1": {
+                    "name": "Motor Motor de 1.0L con 66HP",
+                    "fuel": "Gasolina",
+                    "price": "$315,200 MXN",
+                    "transmision": "Manual",
+                    "power": "66HP",
+                    "performance": "20.9 km/l",
+                    "emissions": "",
+                    "emissions_level": "B"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Blanco"
+                },
+                "interior": {
+                    "1": "Tela gris"
+                }
+            },
+            "rims": [
+                "Rines de Acero con embellecedores",
+                "Rines 2"
+            ]
+        }
+    }
+}

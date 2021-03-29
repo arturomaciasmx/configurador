@@ -1,0 +1,35 @@
+{
+    "id": "stepway",
+    "default": "Zen",
+    "models": {
+        "Zen": {
+            "name": "Stepway",
+            "motors": {
+                "motor1": {
+                    "name": "Motor 1.6L MT 5 velocidades 115HP",
+                    "fuel": "Gasolina",
+                    "price": "$249,900 MXN",
+                    "transmision": "Manual",
+                    "power": "115 hp",
+                    "performance": "20.8 km/l",
+                    "emissions": "132.7 gCO2/km",
+                    "emissions_level": "B"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Gris",
+                    "2": "Negro",
+                    "3": "Rojo"
+                },
+                "interior": {
+                    "1": "Tela gris"
+                }
+            },
+            "rims": [
+                "Rines de Acero con embellecedores",
+                "Rines 2"
+            ]
+        }
+    }
+}

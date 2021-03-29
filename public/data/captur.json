@@ -1,0 +1,34 @@
+{
+    "id": "captur",
+    "default": "Intens",
+    "models": {
+        "Intens": {
+            "name": "Captur",
+            "motors": {
+                "motor1": {
+                    "name": "Motor 2.0L TM 6 velocidades 140 HP",
+                    "fuel": "Gasolina",
+                    "price": "$315,200 MXN",
+                    "transmision": "Manual",
+                    "power": "140HP",
+                    "performance": "15.3 km/l",
+                    "emissions": "",
+                    "emissions_level": "B"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Blanco",
+                    "2": "Gris"
+                },
+                "interior": {
+                    "1": "Tela gris"
+                }
+            },
+            "rims": [
+                "Rines de Acero con embellecedores",
+                "Rines 2"
+            ]
+        }
+    }
+}

@@ -1,0 +1,33 @@
+{
+    "id": "duster",
+    "default": "Zen",
+    "models": {
+        "Zen": {
+            "name": "Duster",
+            "motors": {
+                "motor1": {
+                    "name": "Motor 2.0 LT TM 6 velocidades 140HP",
+                    "fuel": "Gasolina",
+                    "price": "$291,200 MXN",
+                    "transmision": "Manual",
+                    "power": "140HP",
+                    "performance": "15.4 km/l",
+                    "emissions": "",
+                    "emissions_level": "B"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Rojo"
+                },
+                "interior": {
+                    "1": "Tela gris"
+                }
+            },
+            "rims": [
+                "Rines de Acero con embellecedores",
+                "Rines 2"
+            ]
+        }
+    }
+}

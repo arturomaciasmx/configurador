@@ -47,54 +47,47 @@
             </div>
             
             <div class="contact col-md-6 col-sm-12">
-<div id='crmWebToEntityForm'>
-    <META HTTP-EQUIV='content-type' CONTENT='text/html;charset=UTF-8'/>
-    <form action='https://crm.zoho.com/crm/WebToLeadForm' name=WebToLeads4281903000001596039 method='POST'
-        onSubmit='javascript:document.charset="UTF-8"; return checkMandatory4281903000001596039()'
-        accept-charset='UTF-8'>
-        <input type='text' style='display:none;' name='xnQsjsdp'
-            value='941965040ae679ad10aa376011a0b9d9f04e8f42c8b7b481c39756a952084572'>
-        <input type='hidden' name='zc_gad' id='zc_gad' value=''>
-        <input type='text' style='display:none;' name='xmIwtLD'
-            value='82c4e093f19d8ae4939e0a35f58a2f2e8faa1164de99f5f5f64c37bd1ec321d2'>
-        <input type='text' style='display:none;' name='actionType' value='TGVhZHM='>
-        <input type='text' style='display:none;' name='returnURL' value='https://peugeotmexico.com/aparta-tu-peugeot/'>
-        <!-- Do not remove this code. -->
 
-           
-            
+                <div v-if="sent" style="text-align:center; padding: 100px 0;">
+                    <h2>¡Muchas gracias por contactarnos!</h2>
+                    <p>Tu solicitud nos fue enviada con éxito, a la brevedad uno de nuestro equipo te estará contactando para darle seguimiento a tu solicitud.</p>
+                    <a  href="/" style="font-size: 20px;font-weight: bold;color: rgb(0 0 0);background: rgb(252, 214, 3);margin-top: 20px;padding: 10px 30px;display: inline-block;">Ir a Inicio</a>                </div>
                 
-                <div class="form-group">
-                        <input class="form-control" type="text" name="name='First Name'" required placeholder="Nombre:">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="text" name="Last Name" required placeholder="Apellido:">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="email" name="Email" required placeholder="Email:">
-                    </div>
-                    <div class="form-group">
-                        <input class="form-control" type="text" name="Phone" required placeholder="Celular:">
-                        <b style="width: 100%; font-size: 12px;"><span style="color: rgb(0, 98, 197);">Nota.</span> 10 digitos incluyendo lada. </b>
-                    </div>
-                
+                <form v-else action="" method="post" class="" v-on:submit.prevent="sendForm">
+
+                    <label> Nombre<br></label>
+                   <input type="text" name="nombre" v-model="nombre" required>
                     
-                <textarea name='Description' maxlength='500' style='width:100%;' placeholder="Mensaje:" v-model="options" hidden>
+                    <label> Apellido<br></label>
+                    <input type="text" name="apellido" v-model="apellido" value="" size="40" class="" required>
                     
-                </textarea>
-                <input type="hidden" name="Lead Source" value="Configurador">
+                    <label> Correo electrónico<br></label>
+                    <input type="email" name="correo" v-model="correo" value="" size="40" class="" required>
+                    
+                    <label> Teléfono<br></label>
+                    <input type="tel" name="telefono" v-model="telefono" value="" size="40" class="" required>
+                    
+                   <textarea name="mensaje" v-model="options" cols="40" rows="3" class="" style="display:none;"></textarea>
                 
-                <input style="padding: 13px 40px;border-radius: 0;cursor: pointer;font-size:12px;color: #fff;background: #0063c9;border:none;" id="formsubmit" type="submit" value="Enviar">
-                <p style="margin-top:15px;font-size: 11px;line-height: 12px;"> <img src="https://peugeotmexico.com/wp-content/uploads/2020/05/peugeot_home_03.png" style="
-                    float: left;
-                    margin-right: 5px;
-                ">Aviso de Privacidad. Su información personal es solo para nuestra consesionaria Peugeot y se utilizará únicamente para contactarlo. No cederemos ni venderemos su información a nadie. Consulte nuestra Política de privacidad para obtener más información.</p>
-        
-    </form>
-</div>
+                    <label> Concesionario<br></label>
+                        <!-- <select name="concesionario" v-model="concesionario"> -->
+                        <select name="concesionario">
+                        <option value="Tijuana" selected>Tijuana</option>
+                        <option value="Ensenada">Ensenada</option>
+                        <option value="Mexicali">Mexicali</option>
+                        <option value="Hermosillo">Hermosillo</option>
+                        <option value="Obregón">Obregón</option>
+                        <option value="Los Cabos">Los Cabos</option>
+                    </select>
+                
+                
+                    <input type="hidden" name="id" v-model="id" value="" size="40" class="">
+                
+                    <button>Enviar</button>
+                
+                    <div class="wpcf7-response-output" aria-hidden="true"></div>
+                </form>
             </div>
-
-            
 
         </div>
 
@@ -106,7 +99,16 @@ export default {
     name: 'Finalizar',
     data() {
         return {
-            options: ""
+            options: "",
+            nombre: "",
+            apellido: "",
+            correo: "",
+            telefono: "",
+            mensaje: "",
+            modelo: "",
+            concesionario: "",
+            id: Math.floor(Math.random()*(99999-11111+1)+11111),
+            sent: false
         }
     },
     created() {
@@ -127,14 +129,87 @@ export default {
         },
         selectedMotor() {
             return this.$store.getters.getSelectedMotor
+        },
+        selectedInterior() {
+            return this.$store.getters.getSelectedInterior
         }
     },
     methods: {
         selectedOptions() {
             this.options = 
-            'Modelo: ' + this.selectedModel.name +  
-            '\nMotor: ' + this.selectedMotor.name +
-            '\nColor: ' + this.selectedModel.colors.exterior[this.selectedColor]
+            'Motor: ' + this.selectedMotor.name
+        },
+        sendForm() {
+            // console.log("sendForm button");
+            this.sent = true;
+            const requestOptions = {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({prospect: {
+                        status: "new",
+                        id: this.id,
+                        vehicle: {
+                            interest: "buy",
+                            status: "new",
+                            make: "Renault",
+                            model: this.selectedModel.name,
+                            colorcombination: { 
+                                exteriorcolor: this.selectedModel.colors.exterior[this.selectedColor], 
+                                interiorcolor: this.selectedModel.colors.interior[this.selectedInterior]
+                            } 
+                        },
+                        customer: {
+                            contact: {
+                                name: [
+                                    {
+                                        part: "first",
+                                        value: this.nombre
+                                    },
+                                    {
+                                        part: "last",
+                                        value: this.apellido
+                                    }
+                                ],
+                                email: this.correo,
+                                phone: [
+                                    this.telefono
+                                ]
+                            },
+                            address: {
+                                state: ""
+                            },
+                            comments: this.options,
+                            origin: ""
+                        },
+                        vendor: {
+                            source: "tersa",
+                            id: "084076",
+                            name: "RENAULT CD OBREGON"
+                        }
+                    },
+                    provider: {
+                        name: "tersa"
+                    }
+                })
+            };
+
+            console.log(requestOptions);
+            fetch("https://www.sicopweb.com/apidms/dms/v1/rest/leads/adfv2", requestOptions)
+            .then(async response => {
+                const data = await response.json();
+                    // check for error response
+                    console.log(response);
+                    if (!response.ok) {
+                        // get error message from body or default to response status
+                        console.log(requestOptions);
+                        const error = (data && data.message) || response.status;
+                        return Promise.reject(error);
+                    }
+                })
+            .catch(error => {
+                this.errorMessage = error;
+                console.log('There was an error!', error);
+            });
         }
     }
     

@@ -1,0 +1,33 @@
+{
+    "id": "koleos",
+    "default": "Intens",
+    "models": {
+        "Intens": {
+            "name": "Koleos",
+            "motors": {
+                "motor1": {
+                    "name": "Motor 2.5L CVT 171 HP",
+                    "fuel": "Gasolina",
+                    "price": "$474,500 MXN",
+                    "transmision": "Manual",
+                    "power": "171HP",
+                    "performance": "14.4 km/l",
+                    "emissions": "",
+                    "emissions_level": "B"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Gris Artense"
+                },
+                "interior": {
+                    "1": "Tela gris"
+                }
+            },
+            "rims": [
+                "Rines de Acero con embellecedores",
+                "Rines 2"
+            ]
+        }
+    }
+}

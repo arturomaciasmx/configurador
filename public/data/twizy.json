@@ -1,0 +1,33 @@
+{
+    "id": "twizy",
+    "default": "Tecno",
+    "models": {
+        "Tecno": {
+            "name": "Twizy",
+            "motors": {
+                "motor1": {
+                    "name": "3CG Eléctrico",
+                    "fuel": "Eléctrico",
+                    "price": "$343,200 MXN",
+                    "transmision": "BVEL",
+                    "power": "140 hp",
+                    "performance": "100 km*",
+                    "emissions": "NA",
+                    "emissions_level": "NA"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Blanco"
+                },
+                "interior": {
+                    "1": "Tela gris"
+                }
+            },
+            "rims": [
+                "Rines de Acero con embellecedores",
+                "Rines 2"
+            ]
+        }
+    }
+}

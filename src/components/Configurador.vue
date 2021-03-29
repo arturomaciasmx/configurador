@@ -2,7 +2,7 @@
     <div>
         <div class="row mt-5 mb-5">
             <Stages></Stages>
-            <div class="stage col-sm-12 col-md-9">
+            <div class="stage col-sm-12">
                 <p v-on:click="previousStage" class="back" v-if="currentStage > 1">
                     <span class="material-icons">keyboard_arrow_left</span> Regresar
                 </p>

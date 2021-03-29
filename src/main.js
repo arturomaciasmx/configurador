@@ -30,6 +30,8 @@ const store = new Vuex.Store({
   mutations: {
     nextStage(state) {
       state.currentStage++;
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     },
     previousStage(state) {
       state.currentStage--;
@@ -72,7 +74,10 @@ const store = new Vuex.Store({
     },
     getSelectedMotor(state) {
       return state.currentJSON.models[state.selectedModel].motors[state.selectedMotor]
-    }
+    },
+    getSelectedInterior(state) {
+        return state.selectedInterior
+      }
   }
 })
 

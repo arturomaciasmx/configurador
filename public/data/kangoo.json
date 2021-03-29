@@ -1,0 +1,33 @@
+{
+    "id": "kangoo",
+    "default": "Intens",
+    "models": {
+        "Intens": {
+            "name": "Kangoo",
+            "motors": {
+                "motor1": {
+                    "name": "Motor 1.6L TM 115HP",
+                    "fuel": "Gasolina",
+                    "price": "$275,000 MXN",
+                    "transmision": "Manual",
+                    "power": "115 hp",
+                    "performance": "16.6 km/l",
+                    "emissions": "NA",
+                    "emissions_level": "NA"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Blanco"
+                },
+                "interior": {
+                    "1": "Tela gris"
+                }
+            },
+            "rims": [
+                "Rines de Acero con embellecedores",
+                "Rines 2"
+            ]
+        }
+    }
+}

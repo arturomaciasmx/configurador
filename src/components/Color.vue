@@ -27,7 +27,7 @@
             </a>
         </div>
 
-        <ul class="d-flex pl-0">
+        <ul class="d-flex pl-0 color-list">
             <li class="mr-3 color-selector" v-for="(color, key) in selectedModel.colors.exterior" :key="key" :class="{ selected: key == selectedColor}" v-on:click="setColor(key)">
                 <img :src="'./img/Colors/Exterior/' + color + '.jpg'" alt="">
                 <p class="text-center">{{color}}</p>

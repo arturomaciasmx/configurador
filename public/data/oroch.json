@@ -1,0 +1,33 @@
+{
+    "id": "oroch",
+    "default": "Zen",
+    "models": {
+        "Zen": {
+            "name": "Oroch",
+            "motors": {
+                "motor1": {
+                    "name": "Motor 2.0L TM 6 velocidades 140HP",
+                    "fuel": "Gasolina",
+                    "price": "$305,800 MXN",
+                    "transmision": "Manual",
+                    "power": "140 hp",
+                    "performance": "16.1 km/l",
+                    "emissions": "132.7 gCO2/km",
+                    "emissions_level": "B"
+                }
+            },
+            "colors": {
+                "exterior": {
+                    "1": "Rojo"
+                },
+                "interior": {
+                    "1": "Tela gris"
+                }
+            },
+            "rims": [
+                "Rines de Acero con embellecedores",
+                "Rines 2"
+            ]
+        }
+    }
+}
